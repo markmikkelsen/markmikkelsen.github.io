@@ -20,14 +20,6 @@ GitHub Pages must use **GitHub Actions** as its publishing source. The workflow 
 
 No build dependencies, server runtime, database, analytics, cookies, or environment variables are required.
 
-## Before connecting a public domain
-
-- Review the CV-based professional email and faculty appointment dates.
-- The supplied CV is included in `assets/` and linked from the homepage and About page.
-- The talks archive includes all 13 CV-listed invited talks and the INSPECTOR workshop.
-- If the public domain changes, update canonical URLs and Open Graph metadata in the source pages, plus `sitemap.xml` and `robots.txt`.
-- Replace or supplement the schematic scientific illustration if an approved portrait or research image is preferred.
-
 ## Hosting notes
 
 The site uses relative URLs, except on the built 404 page, which uses root-absolute URLs so it renders correctly at any missing address. All pages work from a domain root; if the site is ever moved to a project subdirectory, the 404 page's links will need that subdirectory as a prefix (see the 404 rewrite in `scripts/build.mjs`). The included `.nojekyll` file makes the output compatible with GitHub Pages without Jekyll processing. The custom `404.html` can be used by hosts that support static error pages.
