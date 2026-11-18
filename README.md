@@ -1,6 +1,6 @@
-# Mark Mikkelsen — academic website
+# Mark Mikkelsen's personal website
 
-A responsive, multi-page academic website for Mark Mikkelsen, Ph.D., built as a dependency-free static site.
+A responsive, multi-page website for Mark Mikkelsen, Ph.D., built as a dependency-free static site.
 
 ## Pages
 
