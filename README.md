@@ -6,9 +6,9 @@ A responsive, multi-page website for Mark Mikkelsen, Ph.D., built as a dependenc
 
 - `index.html` — homepage and research overview
 - `research.html` — research program and themes
-- `publications.html` — 64-entry bibliography grouped by year with search, year, and publication-type filters
+- `publications.html` — bibliography grouped by year with search, year, and publication-type filters
 - `software.html` — Gannet, NIfTI-MRS, MRS-BIDS, and open-science principles
-- `talks.html` — 13 invited talks and an additional workshop presentation
+- `talks.html` — invited talks and an additional workshop presentation
 - `about.html` — professional biography and expertise
 - `contact.html` — professional contact channels
 - `404.html` — static not-found page
