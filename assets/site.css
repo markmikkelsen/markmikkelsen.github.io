@@ -865,12 +865,6 @@ footer {
   margin-top: 6px;
 }
 
-:root[data-theme="dark"] .orcid-btn {
-  background: #fff;
-  border-color: #fff;
-  color: #14243a;
-}
-
 .pub-type-filters {
   margin: -12px 0 28px;
 }
