@@ -40,7 +40,7 @@ Edit `partials/header.html` to update the name, navigation, or header controls o
 
 ## Final publication choices
 
-The site can be deployed now, but the public domain is not yet known. After the domain is selected, add canonical URLs, absolute social-sharing metadata, and a sitemap. The supplied November 15, 2026 CV is linked from the homepage and About page. See `DEPLOYMENT.md`.
+The public site is https://markmikkelsen.github.io/. Canonical URLs, absolute social-sharing metadata, and a sitemap use this address. GitHub Actions builds and publishes `dist/` whenever changes are pushed to `main`. The supplied November 15, 2026 CV is linked from the homepage and About page. See `DEPLOYMENT.md`.
 
 ## License
 

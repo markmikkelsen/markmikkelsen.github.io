@@ -21,7 +21,7 @@ const pages = [
   "contact.html",
   "404.html",
 ];
-const rootFiles = ["LICENSE", "robots.txt", ".nojekyll"];
+const rootFiles = ["LICENSE", "robots.txt", "sitemap.xml"];
 const headerMarker = "<!-- include:header -->";
 const header = (
   await readFile(path.join(root, "partials/header.html"), "utf8")
@@ -56,6 +56,7 @@ const typeFilters =
 
 await rm(output, { recursive: true, force: true });
 await mkdir(path.join(output, "assets"), { recursive: true });
+await writeFile(path.join(output, ".nojekyll"), "\n");
 
 for (const file of rootFiles)
   await copyFile(path.join(root, file), path.join(output, file));

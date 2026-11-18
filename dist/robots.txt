@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://markmikkelsen.github.io/sitemap.xml
