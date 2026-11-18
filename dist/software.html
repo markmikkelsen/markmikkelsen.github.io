@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#14243a" />
+    <meta
+      name="description"
+      content="Open-source software and data standards connected to Mark Mikkelsen's magnetic resonance spectroscopy research"
+    />
+    <meta
+      property="og:title"
+      content="Software & Open Science | Mark Mikkelsen"
+    />
+    <meta
+      property="og:description"
+      content="Gannet, MRS data standards, and reproducible neuroimaging workflows"
+    />
+    <meta property="og:type" content="website" />
+    <title>Software &amp; Open Science | Mark Mikkelsen, Ph.D.</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body data-page="software">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Mark Mikkelsen home"
+      >MARK MIKKELSEN, Ph.D.</a
+    >
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a data-nav="about" href="about.html">About</a>
+      <a data-nav="research" href="research.html">Research</a>
+      <a data-nav="publications" href="publications.html">Publications</a>
+      <a data-nav="software" href="software.html">Software</a>
+      <a data-nav="talks" href="talks.html">Talks</a>
+      <a data-nav="contact" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button
+        class="icon-btn"
+        id="theme-btn"
+        type="button"
+        aria-label="Toggle dark mode"
+      >
+        ◐</button
+      ><button
+        class="icon-btn"
+        id="menu-btn"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="nav"
+      >
+        ☰
+      </button>
+    </div>
+  </div>
+</header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <div class="breadcrumb"><a href="index.html">Home</a> / Software</div>
+          <div class="eyebrow">Software &amp; open science</div>
+          <h1 class="serif">Tools for <em>reproducible</em> discovery</h1>
+          <p>
+            Open software, documented workflows, and interoperable data
+            standards make sophisticated MR methods more accessible and results
+            easier to evaluate and reuse.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Featured project</div>
+              <h2 class="serif">Gannet</h2>
+              <p>
+                A free, open-source MATLAB toolkit for automated processing and
+                quantitative analysis of edited MRS data.
+              </p>
+            </div>
+          </div>
+          <div class="about-grid">
+            <div class="card">
+              <div class="mini-art" style="height: 300px">
+                <img
+                  src="assets/brain-spectrum.png"
+                  alt="Illustration of a sagittal view of the human brain"
+                />
+              </div>
+            </div>
+            <div class="prose">
+              <h3>From raw spectral data to interpretable outputs</h3>
+              <p>
+                Gannet provides an established workflow for loading, processing,
+                modeling, co-registering, and reporting edited MRS data. The
+                project supports research use across scanner vendors and
+                evolving community data formats.
+              </p>
+              <div class="hero-cta">
+                <a
+                  class="btn"
+                  href="https://markmikkelsen.github.io/Gannet-docs/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Documentation ↗</a
+                ><a
+                  class="btn outline"
+                  href="https://github.com/markmikkelsen/Gannet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Source code ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section split-band">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Open ecosystem</div>
+              <h2 class="serif">Software and standards</h2>
+            </div>
+          </div>
+          <div class="three-grid">
+            <article class="card">
+              <div class="card-body">
+                <span class="tag">Analysis</span>
+                <h3>Gannet</h3>
+                <p>
+                  Automated processing and quantitative analysis for edited MRS,
+                  with documentation and openly available source code.
+                </p>
+                <a
+                  class="text-link"
+                  href="https://github.com/markmikkelsen/Gannet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub repository ↗</a
+                >
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <span class="tag">Data format</span>
+                <h3>NIfTI-MRS</h3>
+                <p>
+                  A standard representation for spectroscopy data that supports
+                  interoperability between tools and research groups.
+                </p>
+                <a
+                  class="text-link"
+                  href="https://github.com/wtclarke/mrs_nifti_standard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Standard repository ↗</a
+                >
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <span class="tag">Organization</span>
+                <h3>MRS-BIDS</h3>
+                <p>
+                  An extension of the Brain Imaging Data Structure for
+                  organizing MRS data and metadata in a consistent, shareable
+                  form.
+                </p>
+                <a
+                  class="text-link"
+                  href="https://doi.org/10.1038/s41597-025-05543-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Read the paper ↗</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="eyebrow">Working principles</div>
+          <h2 class="serif">Open science as infrastructure</h2>
+          <div class="feature-list">
+            <article class="feature-row">
+              <div class="number">01</div>
+              <div>
+                <h3>Transparent processing</h3>
+                <p>
+                  Document the path from raw signal to reported measurement so
+                  choices can be inspected and reproduced.
+                </p>
+              </div>
+            </article>
+            <article class="feature-row">
+              <div class="number">02</div>
+              <div>
+                <h3>Interoperable data</h3>
+                <p>
+                  Use shared formats and metadata conventions to reduce friction
+                  between acquisition, analysis, and archive systems.
+                </p>
+              </div>
+            </article>
+            <article class="feature-row">
+              <div class="number">03</div>
+              <div>
+                <h3>Community development</h3>
+                <p>
+                  Build tools and standards collaboratively so they reflect
+                  diverse scanners, workflows, and research needs.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="next">
+        <div class="wrap next-inner">
+          <div>
+            <div class="eyebrow">Next</div>
+            <h2 class="serif">Research shared aloud</h2>
+            <p>Browse selected talks, seminars, and workshop presentations.</p>
+          </div>
+          <a class="btn" href="talks.html">View talks →</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-inner">
+        <span>© <span data-current-year></span> Mark Mikkelsen, Ph.D.</span>
+        <div class="footer-links">
+          <a href="LICENSE">License</a><a href="contact.html">Contact</a
+          ><a href="index.html">Home</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

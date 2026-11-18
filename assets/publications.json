@@ -1,0 +1,514 @@
+[
+  {
+    "year": 2026,
+    "title": "The impact and reliability of tissue segmentation on in vivo magnetic resonance spectroscopy metabolite quantification",
+    "authors": "Archibald J, Igwe KC, Kaiser A, Landheer K, Lee J, Kramer JLK, Gudmundson AT, Zöllner HJ, Oeltzschner G, Fleischer CC, Zölch N, Near J, MIKKELSEN M",
+    "citation": "Magn Reson Med. 2026;96(2):516-529",
+    "doi": "10.1002/mrm.70380",
+    "type": "Original research"
+  },
+  {
+    "year": 2026,
+    "title": "Test–retest reliability of multi‐metabolite edited MRS at 3T using PRESS and sLASER",
+    "authors": "Archibald J, Bouchard AE, Noeske R, Shungu DC, MIKKELSEN M",
+    "citation": "Magn Reson Med. 2026;95(3):1375-1392",
+    "doi": "10.1002/mrm.70161",
+    "type": "Original research"
+  },
+  {
+    "year": 2026,
+    "title": "The role of glutathione in cognition, cognitive effort, and cognitive endurance in young and older adults",
+    "authors": "Rodríguez-Nieto G, Alvarez-Anacona DF, MIKKELSEN M, Li H, Swinnen SP",
+    "citation": "Front Aging Neurosci. 2026;18:1729015",
+    "doi": "10.3389/fnagi.2026.1729015",
+    "type": "Original research"
+  },
+  {
+    "year": 2026,
+    "title": "GABA and Glx distinctively predict motor learning and retention in young and older adults",
+    "authors": "Rodríguez-Nieto G, Li H, Chalavi S, MIKKELSEN M, Edden RAE, Swinnen SP",
+    "citation": "J Neurosci. 2026;(October):e1440252026",
+    "doi": "10.1523/JNEUROSCI.1440-25.2026",
+    "type": "Original research"
+  },
+  {
+    "year": 2026,
+    "title": "Inhibition/excitation balance is associated with functional connectivity during cognitive flexibility performance",
+    "authors": "Rodríguez-Nieto G, MIKKELSEN M, Swinnen SP",
+    "citation": "Brain Commun. 2026;8(5):1-14",
+    "doi": "10.1093/braincomms/fcag319",
+    "type": "Original research"
+  },
+  {
+    "year": 2026,
+    "title": "Eye-Tracking-BIDS: the Brain Imaging Data Structure extended to gaze position and pupil data",
+    "authors": "Szinte M, Bach DR, Draschkow D, Esteban O, Gagl B, Gau R, Gregorova K, Halchenko YO, Huberty S, Kling SM, Kulkarni S, The BIDS Maintainers, Markiewicz CJ, MIKKELSEN M, Oostenveld R, Pfarr JK",
+    "citation": "bioRxiv. Published online February 5, 2026",
+    "doi": "10.64898/2026.02.03.703514",
+    "type": "Preprint"
+  },
+  {
+    "year": 2025,
+    "title": "Noise decorrelation coil combination optimizes SNR of edited 1H MRS data",
+    "authors": "Bouchard AE, MIKKELSEN M",
+    "citation": "Magn Reson Imaging. 2025;122:110452",
+    "doi": "10.1016/j.mri.2025.110452",
+    "type": "Original research"
+  },
+  {
+    "year": 2025,
+    "title": "MRS-BIDS, an extension to the Brain Imaging Data Structure for magnetic resonance spectroscopy",
+    "authors": "Bouchard AE, Wong D, Bogner W, Gau R, Halchenko YO, Lamb DG, Markiewicz CJ, Mullins PG, Niso G, Oeltzschner G, BIDS Maintainers (Appelhoff S, Blair R, Earl E, Galassi A, Hardcastle N, Pfarr JK, Ray K, Rogers C, Salo T), Clarke WT, Wilson M, MIKKELSEN M",
+    "citation": "Sci Data. 2025;12(1):1384",
+    "doi": "10.1038/s41597-025-05543-2",
+    "type": "Original research"
+  },
+  {
+    "year": 2025,
+    "title": "The role of inhibitory and excitatory neurometabolites in age-related differences in action selection",
+    "authors": "Rodríguez-Nieto G, Rasooli A, Li H, Sunaert S, Mantini D, MIKKELSEN M, Edden RAE, Chalavi S, Swinnen SP",
+    "citation": "npj Aging. 2025;11(1):17",
+    "doi": "10.1038/s41514-025-00204-5",
+    "type": "Original research"
+  },
+  {
+    "year": 2025,
+    "title": "Reproducibility of HERMES-measured GABA+ and glutathione in the mesial temporal lobe",
+    "authors": "DeMayo MM, Botros M, Bell TK, MIKKELSEN M, Mosher V, George A, McGirr A, Federico P, Harris AD",
+    "citation": "J Neurosci Methods. 2025;423:110542",
+    "doi": "10.1016/j.jneumeth.2025.110542",
+    "type": "Original research"
+  },
+  {
+    "year": 2025,
+    "title": "Modulation of neurometabolites in sensory processing brain areas during motor learning",
+    "authors": "Li H, Rasooli A, Rodríguez‐Nieto G, MIKKELSEN M, Mantini D, Sunaert S, Chalavi S, Swinnen SP",
+    "citation": "J Physiol. 2025;603(19):5681-5700",
+    "doi": "10.1113/JP287349",
+    "type": "Original research"
+  },
+  {
+    "year": 2024,
+    "title": "Baseline GABA+ levels in areas associated with sensorimotor control predict initial and long‐term motor learning progress",
+    "authors": "Li H, Chalavi S, Rasooli A, Rodríguez‐Nieto G, Seer C, MIKKELSEN M, Edden RAE, Sunaert S, Peeters R, Mantini D, Swinnen SP",
+    "citation": "Hum Brain Mapp. 2024;45(1):e26537",
+    "doi": "10.1002/hbm.26537",
+    "type": "Original research"
+  },
+  {
+    "year": 2024,
+    "title": "The Trajectory of Prefrontal GABA Levels in Initially Antipsychotic-Naïve Patients With Psychosis During 2 Years of Treatment and Associations With Striatal Cerebral Blood Flow and Outcome",
+    "authors": "Bojesen KB, Rostrup E, Sigvard AK, MIKKELSEN M, Edden RAE, Ebdrup BH, Glenthøj B",
+    "citation": "Biol Psychiatry Cogn Neurosci Neuroimaging. 2024;9(7):703-713",
+    "doi": "10.1016/j.bpsc.2023.12.002",
+    "type": "Original research"
+  },
+  {
+    "year": 2024,
+    "title": "Neural correlates of transfer of learning in motor coordination tasks: role of inhibitory and excitatory neurometabolites",
+    "authors": "Rasooli A, Chalavi S, Li H, Seer C, Adab HZ, Mantini D, Sunaert S, MIKKELSEN M, Edden RAE, Swinnen SP",
+    "citation": "Sci Rep. 2024;14(1):3251",
+    "doi": "10.1038/s41598-024-53901-8",
+    "type": "Original research"
+  },
+  {
+    "year": 2024,
+    "title": "MRS study on the correlation between frontal GABA+/Glx ratio and abnormal cognitive function in medication-naive patients with narcolepsy",
+    "authors": "Gao Y, Liu Y, Zhao S, Liu Y, Zhang C, Hui S, MIKKELSEN M, Edden RAE, Meng X, Yu B, Xiao L",
+    "citation": "Sleep Med. 2024;119(April):1-8",
+    "doi": "10.1016/j.sleep.2024.04.004",
+    "type": "Original research"
+  },
+  {
+    "year": 2024,
+    "title": "Transcranial electrical stimulation modulates emotional experience and metabolites in the prefrontal cortex in a donation task",
+    "authors": "Mugnol-Ugarte L, Bortolini T, Yao B, MIKKELSEN M, Carneiro Monteiro M, Andorinho de Freitas Ferreira AC, Bramatti I, Melo B, Hoefle S, Meireles F, Moll J, Pobric G",
+    "citation": "Sci Rep. 2024;14(1):14271",
+    "doi": "10.1038/s41598-024-64876-x",
+    "type": "Original research"
+  },
+  {
+    "year": 2024,
+    "title": "The past, present, and future of the brain imaging data structure (BIDS)",
+    "authors": "Poldrack RA, Markiewicz CJ, Appelhoff S, Ashar YK, Auer T, Baillet S, Bansal S, Beltrachini L, Benar CG, Bertazzoli G, Bhogawar S, Blair RW, Bortoletto M, Boudreau M, Brooks TL, Calhoun VD, Castelli FM, Clement P, Cohen AL, Cohen-Adad J, D’Ambrosio S, de Hollander G, de la Iglesia-Vayá M, de la Vega A, Delorme A, Devinsky O, Draschkow D, Duff EP, DuPre E, Earl E, Esteban O, Feingold FW, Flandin G, Galassi A, Gallitto G, Ganz M, Gau R, Gholam J, Ghosh SS, Giacomel A, Gillman AG, Gleeson P, Gramfort A, Guay S, Guidali G, Halchenko YO, Handwerker DA, Hardcastle N, Herholz P, Hermes D, Honey CJ, Innis RB, Ioanas HI, Jahn A, Karakuzu A, Keator DB, Kiar G, Kincses B, Laird AR, Lau JC, Lazari A, Legarreta JH, Li A, Li X, Love BC, Lu H, Marcantoni E, Maumet C, Mazzamuto G, Meisler SL, MIKKELSEN M, Mutsaerts H, Nichols TE, Nikolaidis A, Nilsonne G, Niso G, Norgaard M, Okell TW, Oostenveld R, Ort E, Park PJ, Pawlik M, Pernet CR, Pestilli F, Petr J, Phillips C, Poline JB, Pollonini L, Raamana PR, Ritter P, Rizzo G, Robbins KA, Rockhill AP, Rogers C, Rokem A, Rorden C, Routier A, Saborit-Torres JM, et al",
+    "citation": "Imaging Neurosci. 2024;2:1-19",
+    "doi": "10.1162/imag_a_00103",
+    "type": "Review article"
+  },
+  {
+    "year": 2024,
+    "title": "MRS-assessed brain GABA modulation in response to task performance and learning",
+    "authors": "Li H, Rodríguez-Nieto G, Chalavi S, Seer C, MIKKELSEN M, Edden RAE, Swinnen SP",
+    "citation": "Behav Brain Funct. 2024;20(1):22",
+    "doi": "10.1186/s12993-024-00248-9",
+    "type": "Review article"
+  },
+  {
+    "year": 2023,
+    "title": "A comprehensive guide to MEGA-PRESS for GABA measurement",
+    "authors": "Peek AL, Rebbeck TJ, Leaver AM, Foster SL, Refshauge KM, Puts NA, Oeltzschner G, MRS Expert Panel (Andronesi OC, Barker PB, Bogner W, Cecil KM, Choi I-Y, Deelchand DK, de Graaf RA, Dydak U, Edden RA, Emir UE, Harris AD, Lin AP, Lythgoe DJ, MIKKELSEN M, Mullins PG, Near J, Öz G, Rae CD, Terpstra M, Williams SR, Wilson M)",
+    "citation": "Anal Biochem. 2023;669:115113",
+    "doi": "10.1016/j.ab.2023.115113",
+    "type": "Expert contribution"
+  },
+  {
+    "year": 2022,
+    "title": "Regional differences in gamma-aminobutyric acid and glutamate concentrations in the healthy newborn brain",
+    "authors": "Basu SK, Pradhan S, Barnett SD, MIKKELSEN M, Kapse KJ, Murnick J, Quistorff JL, Lopez CA, du Plessis AJ, Limperopoulos C",
+    "citation": "Am J Neuroradiol. 2022;43(1):125-131",
+    "doi": "10.3174/ajnr.A7336",
+    "type": "Original research"
+  },
+  {
+    "year": 2022,
+    "title": "Frequency and intensity of premonitory urges‐to‐tic in Tourette syndrome is associated with supplementary motor area GABA+ levels",
+    "authors": "He JL, MIKKELSEN M, Huddleston DA, Crocetti D, Cecil KM, Singer HS, Edden RAE, Gilbert DL, Mostofsky SH, Puts NAJ",
+    "citation": "Mov Disord. 2022;37(3):563-573",
+    "doi": "10.1002/mds.28868",
+    "type": "Original research"
+  },
+  {
+    "year": 2022,
+    "title": "The macromolecular MR spectrum does not change with healthy aging",
+    "authors": "Hui SCN, Gong T, Zöllner HJ, Song Y, Murali‐Manohar S, Oeltzschner G, MIKKELSEN M, Tapper S, Chen Y, Saleh MG, Porges EC, Chen W, Wang G, Edden RAE",
+    "citation": "Magn Reson Med. 2022;87(4):1711-1719",
+    "doi": "10.1002/mrm.29093",
+    "type": "Original research"
+  },
+  {
+    "year": 2022,
+    "title": "Comparison of seven modelling algorithms for γ‐aminobutyric acid–edited proton magnetic resonance spectroscopy",
+    "authors": "Craven AR, Bhattacharyya PK, Clarke WT, Dydak U, Edden RAE, Ersland L, Mandal PK, MIKKELSEN M, Murdoch JB, Near J, Rideaux R, Shukla D, Wang M, Wilson M, Zöllner HJ, Hugdahl K, Oeltzschner G",
+    "citation": "NMR Biomed. 2022;35(7):e4702",
+    "doi": "10.1002/nbm.4702",
+    "type": "Original research"
+  },
+  {
+    "year": 2022,
+    "title": "Hypoxia alters posterior cingulate cortex metabolism during a memory task: A 1H fMRS study",
+    "authors": "Rogan M, Friend AT, Rossetti GM, Edden R, MIKKELSEN M, Oliver SJ, Macdonald JH, Mullins PG",
+    "citation": "Neuroimage. 2022;260:119397",
+    "doi": "10.1016/j.neuroimage.2022.119397",
+    "type": "Original research"
+  },
+  {
+    "year": 2022,
+    "title": "Gamma‐aminobutyric acid (GABA) levels in the midcingulate cortex and clozapine response in patients with treatment‐resistant schizophrenia: A proton magnetic resonance spectroscopy (1H‐MRS) study",
+    "authors": "Ueno F, Nakajima S, Iwata Y, Honda S, Torres‐Carmona E, Mar W, Tsugawa S, Truong P, Plitman E, Noda Y, Mimura M, Sailasuta N, MIKKELSEN M, Edden RAE, De Luca V, Remington G, Gerretsen P, Graff‐Guerrero A",
+    "citation": "Psychiatry Clin Neurosci. 2022;76(11):587-594",
+    "doi": "10.1111/pcn.13463",
+    "type": "Original research"
+  },
+  {
+    "year": 2022,
+    "title": "NIfTI‐MRS: A standard data format for magnetic resonance spectroscopy",
+    "authors": "Clarke WT, Bell TK, Emir UE, MIKKELSEN M, Oeltzschner G, Shamaei A, Soher BJ, Wilson M",
+    "citation": "Magn Reson Med. 2022;88(6):2358-2370",
+    "doi": "10.1002/mrm.29418",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "Age-related GABAergic differences in the primary sensorimotor cortex: A multimodal approach combining PET, MRS and TMS",
+    "authors": "Cuypers K, Hehl M, van Aalst J, Chalavi S, MIKKELSEN M, Van Laere K, Dupont P, Mantini D, Swinnen SP",
+    "citation": "Neuroimage. 2021;226:117536",
+    "doi": "10.1016/j.neuroimage.2020.117536",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "Frequency and phase correction of J‐difference edited MR spectra using deep learning",
+    "authors": "Tapper S, MIKKELSEN M, Dewey BE, Zöllner HJ, Hui SCN, Oeltzschner G, Edden RAE",
+    "citation": "Magn Reson Med. 2021;85(4):1755-1765",
+    "doi": "10.1002/mrm.28525",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "Single-dose L-dopa increases upper brainstem GABA in Parkinson’s disease: A preliminary study",
+    "authors": "Song Y, Gong T, Xiang Y, MIKKELSEN M, Wang G, Edden RAE",
+    "citation": "J Neurol Sci. 2021;422:117309",
+    "doi": "10.1016/j.jns.2021.117309",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "Disorder-specific alterations of tactile sensitivity in neurodevelopmental disorders",
+    "authors": "He JL, Wodka E, Tommerdahl M, Edden RAE, MIKKELSEN M, Mostofsky SH, Puts NAJ",
+    "citation": "Commun Biol. 2021;4(1):97",
+    "doi": "10.1038/s42003-020-01592-y",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "Comparison of methods for spectral alignment and signal modelling of GABA-edited MR spectroscopy data",
+    "authors": "Rideaux R, MIKKELSEN M, Edden RA",
+    "citation": "Neuroimage. 2021:117900",
+    "doi": "10.1016/j.neuroimage.2021.117900",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "Upper brainstem GABA levels in Parkinson’s disease",
+    "authors": "Song Y, Gong T, Saleh MG, MIKKELSEN M, Wang G, Edden RAE",
+    "citation": "Magn Reson Mater Physics Biol Med. 2021",
+    "doi": "10.1007/s10334-021-00910-7",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "In Vivo Brain Glutathione is Higher in Older Age and Correlates with Mobility",
+    "authors": "Hupfeld KE, Hyatt HW, Alvarez Jerez P, MIKKELSEN M, Hass CJ, Edden RAE, Seidler RD, Porges EC",
+    "citation": "Cereb Cortex. 2021;31(10):4576-4594",
+    "doi": "10.1093/cercor/bhab107",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "Frequency drift in MR spectroscopy at 3T",
+    "authors": "Hui SCN, MIKKELSEN M, Zöllner HJ, Ahluwalia V, Alcauter S, Baltusis L, Barany DA, Barlow LR, Becker R, Berman JI, Berrington A, Bhattacharyya PK, Blicher JU, Bogner W, Brown MS, Calhoun VD, Castillo R, Cecil KM, Choi YB, Chu WCW, Clarke WT, Craven AR, Cuypers K, Dacko M, de la Fuente-Sandoval C, Desmond P, Domagalik A, Dumont J, Duncan NW, Dydak U, Dyke K, Edmondson DA, Ende G, Ersland L, Evans CJ, Fermin ASR, Ferretti A, Fillmer A, Gong T, Greenhouse I, Grist JT, Gu M, Harris AD, Hat K, Heba S, Heckova E, Hegarty JP, Heise K, Honda S, Jacobson A, Jansen JFA, Jenkins CW, Johnston SJ, Juchem C, Kangarlu A, Kerr AB, Landheer K, Lange T, Lee P, Levendovszky SR, Limperopoulos C, Liu F, Lloyd W, Lythgoe DJ, Machizawa MG, MacMillan EL, Maddock RJ, Manzhurtsev A V, Martinez-Gudino ML, Miller JJ, Mirzakhanian H, Moreno-Ortega M, Mullins PG, Nakajima S, Near J, Noeske R, Nordhøy W, Oeltzschner G, Osorio-Duran R, Otaduy MCG, Pasaye EH, Peeters R, Peltier SJ, Pilatus U, Polomac N, Porges EC, Pradhan S, Prisciandaro JJ, Puts NA, Rae CD, Reyes-Madrigal F, Roberts TPL, Robertson CE, Rosenberg JT, Rotaru D, O’Gorman Tuura RL, Saleh MG, Sandberg K, et al",
+    "citation": "Neuroimage. 2021;241(21):118430",
+    "doi": "10.1016/j.neuroimage.2021.118430",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "Region-specific elevations of glutamate + glutamine correlate with the sensory symptoms of autism spectrum disorders",
+    "authors": "He JL, Oeltzschner G, MIKKELSEN M, Deronda A, Harris AD, Crocetti D, Wodka EL, Mostofsky SH, Edden RAE, Puts NAJ",
+    "citation": "Transl Psychiatry. 2021;11(1):411",
+    "doi": "10.1038/s41398-021-01525-1",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "Neurophysiological modulations in the (pre)motor-motor network underlying age-related increases in reaction time and the role of GABA levels – a bimodal TMS-MRS study",
+    "authors": "Verstraelen S, Cuypers K, Maes C, Hehl M, Van Malderen S, Levin O, MIKKELSEN M, Meesen RLJ, Swinnen SP",
+    "citation": "Neuroimage. 2021;243:118500",
+    "doi": "10.1016/j.neuroimage.2021.118500",
+    "type": "Original research"
+  },
+  {
+    "year": 2021,
+    "title": "A role for GABA in the modulation of striatal and hippocampal systems under stress",
+    "authors": "Dolfen N, Veldman MP, Gann MA, von Leupoldt A, Puts NAJ, Edden RAE, MIKKELSEN M, Swinnen S, Schwabe L, Albouy G, King BR",
+    "citation": "Commun Biol. 2021;4(1):1033",
+    "doi": "10.1038/s42003-021-02535-x",
+    "type": "Original research"
+  },
+  {
+    "year": 2020,
+    "title": "Reproducibility of flutter-range vibrotactile detection and discrimination thresholds",
+    "authors": "MIKKELSEN M, He J, Tommerdahl M, Edden RAE, Mostofsky SH, Puts NAJ",
+    "citation": "Sci Rep. 2020;10:6528",
+    "doi": "10.1038/s41598-020-63208-z",
+    "type": "Original research"
+  },
+  {
+    "year": 2020,
+    "title": "Correcting frequency and phase offsets in MRS data using robust spectral registration",
+    "authors": "MIKKELSEN M, Tapper S, Near J, Mostofsky SH, Puts NAJ, Edden RAE",
+    "citation": "NMR Biomed. 2020;33(10):e4368",
+    "doi": "10.1002/nbm.4368",
+    "type": "Original research"
+  },
+  {
+    "year": 2020,
+    "title": "An evaluation of the reproducibility of 1H-MRS GABA and GSH levels acquired in healthy volunteers with J-difference editing sequences at varying echo times",
+    "authors": "Prisciandaro JJ, MIKKELSEN M, Saleh MG, Edden RAE",
+    "citation": "Magn Reson Imaging. 2020;65:109-113",
+    "doi": "10.1016/j.mri.2019.10.004",
+    "type": "Original research"
+  },
+  {
+    "year": 2020,
+    "title": "Task-related measures of short-interval intracortical inhibition and GABA levels in healthy young and older adults: A multimodal TMS-MRS study",
+    "authors": "Cuypers K, Verstraelen S, Maes C, Hermans L, Hehl M, Heise K-F, Chalavi S, MIKKELSEN M, Edden R, Levin O, Sunaert S, Meesen R, Mantini D, Swinnen SP",
+    "citation": "Neuroimage. 2020;208:116470",
+    "doi": "10.1016/j.neuroimage.2019.116470",
+    "type": "Original research"
+  },
+  {
+    "year": 2020,
+    "title": "Simultaneous edited MRS of GABA, glutathione, and ethanol",
+    "authors": "Saleh MG, Wang M, MIKKELSEN M, Hui SCN, Oeltzschner G, Boissoneault J, Stennett B, Edden RAE, Porges EC",
+    "citation": "NMR Biomed. 2020;33(4):e4227",
+    "doi": "10.1002/nbm.4227",
+    "type": "Original research"
+  },
+  {
+    "year": 2020,
+    "title": "Comparison of Multivendor Single-Voxel MR Spectroscopy Data Acquired in Healthy Brain at 26 Sites",
+    "authors": "Považan M, MIKKELSEN M, Berrington A, Bhattacharyya PK, Brix MK, Buur PF, Cecil KM, Chan KL, Chen DYT, Craven AR, Cuypers K, Dacko M, Duncan NW, Dydak U, Edmondson DA, Ende G, Ersland L, Forbes MA, Gao F, Greenhouse I, Harris AD, He N, Heba S, Hoggard N, Hsu T-W, Jansen JFA, Kangarlu A, Lange T, Lebel RM, Li Y, Lin C-YE, Liou J-K, Lirng J-F, Liu F, Long JR, Ma R, Maes C, Moreno-Ortega M, Murray SO, Noah S, Noeske R, Noseworthy MD, Oeltzschner G, Porges EC, Prisciandaro JJ, Puts NAJ, Roberts TPL, Sack M, Sailasuta N, Saleh MG, Schallmo M-P, Simard N, Stoffers D, Swinnen SP, Tegenthoff M, Truong P, Wang G, Wilkinson ID, Wittsack H-J, Woods AJ, Xu H, Yan F, Zhang C, Zipunnikov V, Zöllner HJ, Edden RAE, Barker PB",
+    "citation": "Radiology. 2020;295(1):171-180",
+    "doi": "10.1148/radiol.2020191037",
+    "type": "Original research"
+  },
+  {
+    "year": 2020,
+    "title": "Effect of age on GABA+ and glutathione in a pediatric sample",
+    "authors": "Saleh MG, Papantoni A, MIKKELSEN M, Hui SCN, Oeltzschner G, Puts NA, Edden RAE, Carnell S",
+    "citation": "Am J Neuroradiol. 2020;41(6):1099-1104",
+    "doi": "10.3174/ajnr.A6543",
+    "type": "Original research"
+  },
+  {
+    "year": 2020,
+    "title": "Osprey: Open-source processing, reconstruction & estimation of magnetic resonance spectroscopy data",
+    "authors": "Oeltzschner G, Zöllner HJ, Hui SCN, MIKKELSEN M, Saleh MG, Tapper S, Edden RAE",
+    "citation": "J Neurosci Methods. 2020;343:108827",
+    "doi": "10.1016/j.jneumeth.2020.108827",
+    "type": "Original research"
+  },
+  {
+    "year": 2020,
+    "title": "Regional balance between glutamate+glutamine and GABA+ in the resting human brain",
+    "authors": "Steel A, MIKKELSEN M, Edden RAE, Robertson CE",
+    "citation": "Neuroimage. 2020;220:117112",
+    "doi": "10.1016/j.neuroimage.2020.117112",
+    "type": "Original research"
+  },
+  {
+    "year": 2019,
+    "title": "Big GABA II: Water-referenced edited MR spectroscopy at 25 research sites",
+    "authors": "MIKKELSEN M, Rimbault DL, Barker PB, Bhattacharyya PK, Brix MK, Buur PF, Cecil KM, Chan KL, Chen DYT, Craven AR, Cuypers K, Dacko M, Duncan NW, Dydak U, Edmondson DA, Ende G, Ersland L, Forbes MA, Gao F, Greenhouse I, Harris AD, He N, Heba S, Hoggard N, Hsu T-W, Jansen JFA, Kangarlu A, Lange T, Lebel RM, Li Y, Lin C-YE, Liou J-K, Lirng J-F, Liu F, Long JR, Ma R, Maes C, Moreno-Ortega M, Murray SO, Noah S, Noeske R, Noseworthy MD, Oeltzschner G, Porges EC, Prisciandaro JJ, Puts NAJ, Roberts TPL, Sack M, Sailasuta N, Saleh MG, Schallmo M-P, Simard N, Stoffers D, Swinnen SP, Tegenthoff M, Truong P, Wang G, Wilkinson ID, Wittsack H-J, Woods AJ, Xu H, Yan F, Zhang C, Zipunnikov V, Zöllner HJ, Edden RAE",
+    "citation": "Neuroimage. 2019;191:537-548",
+    "doi": "10.1016/j.neuroimage.2019.02.059",
+    "type": "Original research"
+  },
+  {
+    "year": 2019,
+    "title": "Comparing the reproducibility of commonly used magnetic resonance spectroscopy techniques to quantify cerebral glutathione",
+    "authors": "Wijtenburg SA, Near J, Korenic SA, Gaston FE, Chen H, MIKKELSEN M, Chen S, Kochunov P, Hong LE, Rowland LM",
+    "citation": "J Magn Reson Imaging. 2019;49(1):176-183",
+    "doi": "10.1002/jmri.26046",
+    "type": "Original research"
+  },
+  {
+    "year": 2019,
+    "title": "Neurometabolites and associations with cognitive deficits in mild cognitive impairment: a magnetic resonance spectroscopy study at 7 Tesla",
+    "authors": "Oeltzschner G, Wijtenburg SA, MIKKELSEN M, Edden RAE, Barker PB, Joo JH, Leoutsakos J-MS, Rowland LM, Workman CI, Smith GS",
+    "citation": "Neurobiol Aging. 2019;73:211-218",
+    "doi": "10.1016/j.neurobiolaging.2018.09.027",
+    "type": "Original research"
+  },
+  {
+    "year": 2019,
+    "title": "Advanced Hadamard-encoded editing of seven low-concentration brain metabolites: Principles of HERCULES",
+    "authors": "Oeltzschner G, Saleh MG, Rimbault D, MIKKELSEN M, Chan KL, Puts NAJ, Edden RAE",
+    "citation": "Neuroimage. 2019;185:181-190",
+    "doi": "10.1016/j.neuroimage.2018.10.002",
+    "type": "Original research"
+  },
+  {
+    "year": 2019,
+    "title": "Multi-vendor standardized sequence for edited magnetic resonance spectroscopy",
+    "authors": "Saleh MG, Rimbault D, MIKKELSEN M, Oeltzschner G, Wang AM, Jiang D, Alhamud A, Near J, Schär M, Noeske R, Murdoch JB, Ersland L, Craven AR, Dwyer GE, Grüner ER, Pan L, Ahn S, Edden RAE",
+    "citation": "Neuroimage. 2019;189:425-431",
+    "doi": "10.1016/j.neuroimage.2019.01.056",
+    "type": "Original research"
+  },
+  {
+    "year": 2018,
+    "title": "Frequency and phase correction for multiplexed edited MRS of GABA and glutathione",
+    "authors": "MIKKELSEN M, Saleh MG, Near J, Chan KL, Gong T, Harris AD, Oeltzschner G, Puts NAJ, Cecil KM, Wilkinson ID, Edden RAE",
+    "citation": "Magn Reson Med. 2018;80(1):21-28",
+    "doi": "10.1002/mrm.27027",
+    "type": "Original research"
+  },
+  {
+    "year": 2018,
+    "title": "Designing GABA-edited magnetic resonance spectroscopy studies: Considerations of scan duration, signal-to-noise ratio and sample size",
+    "authors": "MIKKELSEN M, Loo RS, Puts NAJ, Edden RAE, Harris AD",
+    "citation": "J Neurosci Methods. 2018;303:86-94",
+    "doi": "10.1016/j.jneumeth.2018.02.012",
+    "type": "Original research"
+  },
+  {
+    "year": 2018,
+    "title": "Macromolecule-suppressed GABA measurements correlate more strongly with behavior than macromolecule-contaminated GABA+ measurements",
+    "authors": "MIKKELSEN M, Harris AD, Edden RAE, Puts NAJ",
+    "citation": "Brain Res. 2018;1701:204-211",
+    "doi": "10.1016/j.brainres.2018.09.021",
+    "type": "Original research"
+  },
+  {
+    "year": 2018,
+    "title": "Effects of eddy currents on selective spectral editing experiments at 3T",
+    "authors": "Oeltzschner G, Snoussi K, Puts NA, MIKKELSEN M, Harris AD, Pradhan S, Tsapkini K, Schär M, Barker PB, Edden RAE",
+    "citation": "J Magn Reson Imaging. 2018;47(3):673-681",
+    "doi": "10.1002/jmri.25813",
+    "type": "Original research"
+  },
+  {
+    "year": 2018,
+    "title": "Hadamard editing of glutathione and macromolecule-suppressed GABA",
+    "authors": "Oeltzschner G, Chan KL, Saleh MG, MIKKELSEN M, Puts NAJ, Edden RAE",
+    "citation": "NMR Biomed. 2018;31(1):e3844",
+    "doi": "10.1002/nbm.3844",
+    "type": "Original research"
+  },
+  {
+    "year": 2018,
+    "title": "Simultaneous editing of GABA and glutathione at 7T using semi-LASER localization",
+    "authors": "Saleh MG, MIKKELSEN M, Oeltzschner G, Chan KL, Berrington A, Barker PB, Edden RAE",
+    "citation": "Magn Reson Med. 2018;80(2):474-479",
+    "doi": "10.1002/mrm.27044",
+    "type": "Original research"
+  },
+  {
+    "year": 2018,
+    "title": "Autism spectrum disorder in the scope of tactile processing",
+    "authors": "MIKKELSEN M, Wodka EL, Mostofsky SH, Puts NAJ",
+    "citation": "Dev Cogn Neurosci. 2018;29:140-150",
+    "doi": "10.1016/j.dcn.2016.12.005",
+    "type": "Review article"
+  },
+  {
+    "year": 2017,
+    "title": "Big GABA: Edited MR spectroscopy at 24 research sites",
+    "authors": "MIKKELSEN M, Barker PB, Bhattacharyya PK, Brix MK, Buur PF, Cecil KM, Chan KL, Chen DY-T, Craven AR, Cuypers K, Dacko M, Duncan NW, Dydak U, Edmondson DA, Ende G, Ersland L, Gao F, Greenhouse I, Harris AD, He N, Heba S, Hoggard N, Hsu T, Jansen JFA, Kangarlu A, Lange T, Lebel RM, Li Y, Lin CE, Liou J, Lirng J-F, Liu F, Ma R, Maes C, Moreno-Ortega M, Murray SO, Noah S, Noeske R, Noseworthy MD, Oeltzschner G, Prisciandaro JJ, Puts NAJ, Roberts TPL, Sack M, Sailasuta N, Saleh MG, Schallmo M, Simard N, Swinnen SP, Tegenthoff M, Truong P, Wang G, Wilkinson ID, Wittsack H-J, Xu H, Yan F, Zhang C, Zipunnikov V, Zöllner HJ, Edden RAE",
+    "citation": "Neuroimage. 2017;159:32-45",
+    "doi": "10.1016/j.neuroimage.2017.07.021",
+    "type": "Original research"
+  },
+  {
+    "year": 2017,
+    "title": "Normalizing data from GABA-edited MEGA-PRESS implementations at 3 Tesla",
+    "authors": "Harris AD, Puts NAJ, Wijtenburg SA, Rowland LM, MIKKELSEN M, Barker PB, Evans CJ, Edden RAE",
+    "citation": "Magn Reson Imaging. 2017;42:8-15",
+    "doi": "10.1016/j.mri.2017.04.013",
+    "type": "Original research"
+  },
+  {
+    "year": 2017,
+    "title": "Altered tactile sensitivity in children with attention-deficit hyperactivity disorder",
+    "authors": "Puts NAJ, Harris AD, MIKKELSEN M, Tommerdahl M, Edden RAE, Mostofsky SH",
+    "citation": "J Neurophysiol. 2017;118(5):2568-2578",
+    "doi": "10.1152/jn.00087.2017",
+    "type": "Original research"
+  },
+  {
+    "year": 2016,
+    "title": "Comparison of the repeatability of GABA-edited magnetic resonance spectroscopy with and without macromolecule suppression",
+    "authors": "MIKKELSEN M, Singh KD, Sumner P, Evans CJ",
+    "citation": "Magn Reson Med. 2016;75(3):946-953",
+    "doi": "10.1002/mrm.25699",
+    "type": "Original research"
+  },
+  {
+    "year": 2016,
+    "title": "Quantification of γ-aminobutyric acid (GABA) in 1H MRS volumes composed heterogeneously of grey and white matter",
+    "authors": "MIKKELSEN M, Singh KD, Brealy JA, Linden DEJ, Evans CJ",
+    "citation": "NMR Biomed. 2016;29(11):1644-1655",
+    "doi": "10.1002/nbm.3622",
+    "type": "Original research"
+  },
+  {
+    "year": 2016,
+    "title": "Simultaneous edited MRS of GABA and glutathione",
+    "authors": "Saleh MG, Oeltzschner G, Chan KL, Puts NAJ, MIKKELSEN M, Schär M, Harris AD, Edden RAE",
+    "citation": "Neuroimage. 2016;142:576-582",
+    "doi": "10.1016/j.neuroimage.2016.07.056",
+    "type": "Original research"
+  }
+]
