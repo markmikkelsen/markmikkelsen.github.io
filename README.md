@@ -38,21 +38,7 @@ Edit `partials/header.html` to update the name, navigation, or header controls, 
 - SVG favicon, custom 404 page, `robots.txt`, and GitHub Pages compatibility
 - No analytics, advertising, cookies, external fonts, or runtime dependencies
 
-## Final publication choices
-
-The public site is https://markmikkelsen.github.io/. Canonical URLs, absolute social-sharing metadata, and a sitemap use this address. GitHub Actions builds and publishes `dist/` whenever changes are pushed to `main`. The supplied November 15, 2026 CV is linked from the homepage and About page. See `DEPLOYMENT.md`.
-
 ## License
 
 - **Website code** (HTML markup, CSS, JavaScript, build scripts, and deployment configuration) is licensed under the [MIT License](LICENSE).
 - **Original website content**, including text embedded in HTML, is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) unless otherwise noted. See [LICENSE-CC.txt](LICENSE-CC.txt) for details and third-party exclusions.
-
-## CV content update
-
-Publication records in `assets/publications.json` and the rendered bibliography follow the November 15, 2026 CV. The duplicate in-press record is excluded, as are manuscripts under preparation. Talks use month-level dates from the CV; the previously documented INSPECTOR workshop is retained. Employment dates, location, and professional email follow the same CV. The downloadable PDF is an unchanged copy of the supplied file.
-
-## Former institutional websites
-
-Former Weill Cornell profile and lab websites may be used as source material when developing this site. Do not link visitors to those websites or present Weill Cornell as a current affiliation. Retain relevant historical references, including appointment dates and talk venues.
-
-Publication-type filter options and each article’s type are read from `assets/publications.json` during the build. Rebuild after changing the JSON. Search, year, and type filters combine.
