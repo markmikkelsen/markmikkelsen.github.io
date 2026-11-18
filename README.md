@@ -35,7 +35,7 @@ Edit `partials/header.html` to update the name, navigation, or header controls, 
 - 63 peer-reviewed publications and one labeled preprint, with full author lists and DOI links
 - Direct DOI and authoritative source links
 - Page-specific titles, descriptions, and Open Graph summaries
-- SVG favicon, custom 404 page, `robots.txt`, and GitHub Pages compatibility
+- Favicon, custom 404 page, `robots.txt`, and GitHub Pages compatibility
 - No analytics, advertising, cookies, external fonts, or runtime dependencies
 
 ## License
