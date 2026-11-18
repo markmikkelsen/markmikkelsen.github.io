@@ -342,6 +342,12 @@ h3 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.split-band .tag {
+  background: var(--surface);
+}
+.split-band .card .tag {
+  background: var(--pale);
+}
 .mini-art {
   height: 150px;
   display: grid;
@@ -538,17 +544,21 @@ h3 {
   color: var(--accent);
   font-size: 0.8rem;
   font-weight: 850;
+  padding-top: 4px;
 }
 .talk:before {
   content: "";
   position: absolute;
-  left: 78px;
+  left: 75px;
   top: 30px;
   width: 11px;
   height: 11px;
   border: 3px solid var(--bg);
   border-radius: 50%;
   background: var(--accent);
+}
+.split-band .talk:before {
+  border-color: var(--pale);
 }
 .talk h2,
 .talk h3 {
