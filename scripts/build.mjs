@@ -123,8 +123,13 @@ for (const page of pages) {
 }
 
 const missing = [];
+const builtPages = new Map();
 for (const page of pages) {
   const html = await readFile(path.join(output, page), "utf8");
+  const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(([, id]) => id));
+  builtPages.set(page, { html, ids });
+}
+for (const [page, { html }] of builtPages) {
   if (!/<title>[^<]+<\/title>/.test(html))
     missing.push(`${page}: missing title`);
   if (
@@ -136,13 +141,23 @@ for (const page of pages) {
     )
   )
     missing.push(`${page}: missing description`);
-  for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
+  for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const target = match[1];
     if (/^(?:https?:|mailto:)/.test(target)) continue;
-    try {
-      await access(path.join(output, target));
-    } catch {
-      missing.push(`${page}: missing ${target}`);
+    const [file, fragment] = target.split("#");
+    if (file) {
+      try {
+        await access(path.join(output, file));
+      } catch {
+        missing.push(`${page}: missing ${target}`);
+        continue;
+      }
+    }
+    if (fragment) {
+      const targetPage = file ? path.normalize(file).replace(/^\//, "") : page;
+      const ids = builtPages.get(targetPage)?.ids;
+      if (ids && !ids.has(decodeURIComponent(fragment)))
+        missing.push(`${page}: missing anchor ${target}`);
     }
   }
 }
@@ -152,5 +167,5 @@ if (missing.length) {
   process.exitCode = 1;
 } else {
   console.log(`Built ${pages.length} pages in ${output}`);
-  console.log("Local link and metadata checks passed.");
+  console.log("Local link, anchor, and metadata checks passed.");
 }

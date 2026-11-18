@@ -42,32 +42,30 @@
     updateThemeLabel();
   });
 
-  menuButton?.addEventListener("click", () => {
-    const open = navigation.classList.toggle("open");
+  function setMenuOpen(open) {
+    if (!navigation || !menuButton) return;
+    navigation.classList.toggle("open", open);
     menuButton.setAttribute("aria-expanded", String(open));
     menuButton.setAttribute(
       "aria-label",
       open ? "Close navigation" : "Open navigation",
     );
     menuButton.textContent = open ? "✕" : "☰";
-  });
+  }
+
+  menuButton?.addEventListener("click", () =>
+    setMenuOpen(!navigation.classList.contains("open")),
+  );
 
   navigation?.querySelectorAll("a").forEach((link) =>
-    link.addEventListener("click", () => {
-      navigation.classList.remove("open");
-      menuButton?.setAttribute("aria-expanded", "false");
-      menuButton?.setAttribute("aria-label", "Open navigation");
-      if (menuButton) menuButton.textContent = "☰";
-    }),
+    link.addEventListener("click", () => setMenuOpen(false)),
   );
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      navigation?.classList.remove("open");
-      menuButton?.setAttribute("aria-expanded", "false");
-      menuButton?.setAttribute("aria-label", "Open navigation");
-      if (menuButton) menuButton.textContent = "☰";
-    }
+    if (event.key !== "Escape" || !navigation?.classList.contains("open"))
+      return;
+    setMenuOpen(false);
+    menuButton.focus();
   });
 
   const page = document.body.dataset.page;
