@@ -30,4 +30,4 @@ No build dependencies, server runtime, database, analytics, cookies, or environm
 
 ## Hosting notes
 
-The site uses relative URLs and works from a domain root or a project subdirectory. The included `.nojekyll` file makes the output compatible with GitHub Pages without Jekyll processing. The custom `404.html` can be used by hosts that support static error pages.
+The site uses relative URLs, except on the built 404 page, which uses root-absolute URLs so it renders correctly at any missing address. All pages work from a domain root; if the site is ever moved to a project subdirectory, the 404 page's links will need that subdirectory as a prefix (see the 404 rewrite in `scripts/build.mjs`). The included `.nojekyll` file makes the output compatible with GitHub Pages without Jekyll processing. The custom `404.html` can be used by hosts that support static error pages.
