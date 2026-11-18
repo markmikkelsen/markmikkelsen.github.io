@@ -470,6 +470,10 @@ h3 {
   color: var(--body);
   font-size: 0.81rem;
 }
+.filter:hover:not([aria-pressed="true"]) {
+  border-color: var(--accent);
+  color: var(--ink);
+}
 .filter[aria-pressed="true"] {
   border-color: var(--ink);
   background: var(--ink);
