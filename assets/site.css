@@ -359,6 +359,14 @@ h3 {
   height: 100%;
   object-fit: cover;
 }
+.mini-art.logo-art {
+  height: auto;
+  padding: 40px 32px;
+}
+.mini-art.logo-art img {
+  height: auto;
+  object-fit: contain;
+}
 .btn {
   display: inline-flex;
   align-items: center;
@@ -391,6 +399,15 @@ h3 {
 }
 .text-link:hover {
   text-decoration: underline;
+}
+.inline-link {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.inline-link:hover {
+  text-decoration-thickness: 2px;
 }
 
 .feature-list {
