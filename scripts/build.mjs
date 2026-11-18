@@ -21,11 +21,14 @@ const pages = [
   "contact.html",
   "404.html",
 ];
-const rootFiles = ["LICENSE", "LICENSE-CC", "robots.txt", "sitemap.xml"];
-const headerMarker = "<!-- include:header -->";
-const header = (
-  await readFile(path.join(root, "partials/header.html"), "utf8")
-).trim();
+const rootFiles = ["LICENSE", "LICENSE-CC.txt", "robots.txt", "sitemap.xml"];
+const readPartial = async (name) =>
+  (await readFile(path.join(root, "partials", `${name}.html`), "utf8")).trim();
+const partials = {
+  "theme-init": await readPartial("theme-init"),
+  header: await readPartial("header"),
+  footer: await readPartial("footer"),
+};
 const bibliography = JSON.parse(
   await readFile(path.join(root, "assets/publications.json"), "utf8"),
 );
@@ -69,10 +72,34 @@ for (const file of await readdir(path.join(root, "assets"))) {
 
 for (const page of pages) {
   const source = await readFile(path.join(root, page), "utf8");
-  if (source.split(headerMarker).length !== 2) {
-    throw new Error(`${page}: expected exactly one shared header marker`);
+  const currentPage = source.match(/<body\b[^>]*\bdata-page="([^"]+)"/)?.[1];
+  let html = source;
+  for (const [name, partial] of Object.entries(partials)) {
+    const marker = `<!-- include:${name} -->`;
+    if (html.split(marker).length !== 2) {
+      throw new Error(`${page}: expected exactly one shared ${name} marker`);
+    }
+    let content = partial;
+    // The footer omits its link to the page being viewed.
+    if (name === "footer" && currentPage) {
+      content = content.replace(
+        new RegExp(
+          `\\s*<a\\b[^>]*\\bdata-nav="${currentPage}"[^>]*>[\\s\\S]*?</a\\s*>`,
+          "g",
+        ),
+        "",
+      );
+    }
+    html = html.replace(marker, () => content);
   }
-  let html = source.replace(headerMarker, () => header);
+  // GitHub Pages serves 404.html at whatever URL was requested, including
+  // nested paths, so its local links must be root-absolute to resolve.
+  if (page === "404.html") {
+    html = html.replace(
+      /\b(href|src)="(?!https?:|mailto:|#|\/)([^"]+)"/g,
+      (_, attribute, target) => `${attribute}="/${target}"`,
+    );
+  }
   if (page === "publications.html") {
     const marker = "<!-- include:publication-types -->";
     if (html.split(marker).length !== 2)
@@ -113,7 +140,7 @@ for (const page of pages) {
     const target = match[1];
     if (/^(?:https?:|mailto:)/.test(target)) continue;
     try {
-      await access(path.resolve(output, target));
+      await access(path.join(output, target));
     } catch {
       missing.push(`${page}: missing ${target}`);
     }

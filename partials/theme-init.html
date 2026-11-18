@@ -1,0 +1,13 @@
+<script>
+  (() => {
+    let theme;
+    try {
+      theme = localStorage.getItem("mm-academic-theme");
+    } catch (_) {}
+    if (theme !== "light" && theme !== "dark")
+      theme = matchMedia("(prefers-color-scheme: light)").matches
+        ? "light"
+        : "dark";
+    document.documentElement.dataset.theme = theme;
+  })();
+</script>

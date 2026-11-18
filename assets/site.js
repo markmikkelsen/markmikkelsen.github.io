@@ -3,11 +3,25 @@
   const themeButton = document.getElementById("theme-btn");
   const menuButton = document.getElementById("menu-btn");
   const navigation = document.getElementById("nav");
-  try {
-    const saved = localStorage.getItem("mm-academic-theme");
-    if (saved === "light" || saved === "dark") root.dataset.theme = saved;
-    else root.dataset.theme = "dark";
-  } catch (_) {}
+  // The initial theme is set in <head> by partials/theme-init.html.
+  // Follow system changes until the visitor picks a theme explicitly.
+  const hasSavedTheme = () => {
+    try {
+      return ["light", "dark"].includes(
+        localStorage.getItem("mm-academic-theme"),
+      );
+    } catch (_) {
+      return false;
+    }
+  };
+  matchMedia("(prefers-color-scheme: light)").addEventListener(
+    "change",
+    (event) => {
+      if (hasSavedTheme()) return;
+      root.dataset.theme = event.matches ? "light" : "dark";
+      updateThemeLabel();
+    },
+  );
 
   function updateThemeLabel() {
     if (!themeButton) return;

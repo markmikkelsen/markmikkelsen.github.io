@@ -23,9 +23,9 @@ npm run build
 
 The command creates a checked, deployable copy in `dist/`. No package installation is required.
 
-## Shared header
+## Shared header and footer
 
-Edit `partials/header.html` to update the name, navigation, or header controls once for all eight pages. Each source HTML page contains an `<!-- include:header -->` marker; the build replaces it with the shared header. Run `npm run build` after editing, then preview or publish `dist/`. Preview the built pages rather than the source HTML files, which contain the header placeholder. The header is embedded during the build and appears immediately without a separate browser request.
+Edit `partials/header.html` to update the name, navigation, or header controls, and `partials/footer.html` to update the footer, once for all eight pages. Each source HTML page contains `<!-- include:header -->` and `<!-- include:footer -->` markers; the build replaces them with the shared partials. Footer links with a `data-nav` value matching the page's `<body data-page>` are omitted on that page, so a page never links to itself in the footer. Run `npm run build` after editing, then preview or publish `dist/`. Preview the built pages rather than the source HTML files, which contain the placeholders. The partials are embedded during the build and appear immediately without a separate browser request.
 
 ## Features
 
@@ -45,7 +45,7 @@ The public site is https://markmikkelsen.github.io/. Canonical URLs, absolute so
 ## License
 
 - **Website code** (HTML markup, CSS, JavaScript, build scripts, and deployment configuration) is licensed under the [MIT License](LICENSE).
-- **Original website content**, including text embedded in HTML, is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) unless otherwise noted. See [LICENSE-CC](LICENSE-CC) for details and third-party exclusions.
+- **Original website content**, including text embedded in HTML, is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) unless otherwise noted. See [LICENSE-CC.txt](LICENSE-CC.txt) for details and third-party exclusions.
 
 ## CV content update
 
