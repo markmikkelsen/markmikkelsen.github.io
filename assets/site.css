@@ -579,6 +579,9 @@ h3 {
   gap: 70px;
   align-items: start;
 }
+[data-page="about"] .about-grid {
+  grid-template-columns: 1.2775fr 0.7225fr;
+}
 .prose p {
   font-size: 1.02rem;
   line-height: 1.86;
@@ -794,6 +797,7 @@ footer {
   .three-grid,
   .two-grid,
   .about-grid,
+  [data-page="about"] .about-grid,
   .contact-methods {
     grid-template-columns: 1fr;
   }
