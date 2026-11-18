@@ -8,7 +8,7 @@ The production-ready site is generated in `dist/`.
 - [x] Connect the website to a GitHub repository: initialize Git locally, choose or create the repository, and push the website source.
 - [x] Choose the public web address and hosting: https://markmikkelsen.github.io/ on GitHub Pages.
 - [x] Add canonical page URLs, absolute social-sharing metadata, and a sitemap using the selected public URL.
-- [ ] Build and publish the site, then check the live pages.
+- [x] Build and publish the site, then check the live pages.
 
 ## Build and preview
 
@@ -16,7 +16,7 @@ The production-ready site is generated in `dist/`.
 2. Preview `dist/` with any static web server.
 3. Push changes to `main`. `.github/workflows/pages.yml` builds and publishes only `dist/`.
 
-GitHub Pages must use **GitHub Actions** as its publishing source. Publication is pending: the repository is private, and the current GitHub plan does not support Pages for private repositories. Make the repository public or upgrade the plan before enabling Pages. The workflow can also be started manually from the repository’s Actions tab.
+GitHub Pages must use **GitHub Actions** as its publishing source. The workflow can also be started manually from the repository’s Actions tab.
 
 No build dependencies, server runtime, database, analytics, cookies, or environment variables are required.
 
