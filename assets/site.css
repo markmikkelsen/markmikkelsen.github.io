@@ -179,6 +179,9 @@ h3 {
 #menu-btn {
   display: none;
 }
+.nav-profiles {
+  display: none;
+}
 
 .hero {
   position: relative;
@@ -789,6 +792,18 @@ footer {
   }
   .nav.open {
     display: flex;
+  }
+  .profile-btn {
+    display: none;
+  }
+  .nav-profiles {
+    width: 100%;
+    margin-top: 4px;
+    padding-top: 14px;
+    border-top: 1px solid var(--stroke);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .nav a {
     width: 100%;
