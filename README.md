@@ -44,7 +44,8 @@ The public site is https://markmikkelsen.github.io/. Canonical URLs, absolute so
 
 ## License
 
-Unless otherwise noted, original non-software website content is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Third-party materials and software/source code are excluded unless expressly stated otherwise. See `LICENSE` for details.
+- **Website code** (HTML markup, CSS, JavaScript, build scripts, and deployment configuration) is licensed under the [MIT License](LICENSE).
+- **Original website content**, including text embedded in HTML, is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) unless otherwise noted. See [LICENSE-CC](LICENSE-CC) for details and third-party exclusions.
 
 ## CV content update
 

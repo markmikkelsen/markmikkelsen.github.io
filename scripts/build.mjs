@@ -21,7 +21,7 @@ const pages = [
   "contact.html",
   "404.html",
 ];
-const rootFiles = ["LICENSE", "robots.txt", "sitemap.xml"];
+const rootFiles = ["LICENSE", "LICENSE-CC", "robots.txt", "sitemap.xml"];
 const headerMarker = "<!-- include:header -->";
 const header = (
   await readFile(path.join(root, "partials/header.html"), "utf8")

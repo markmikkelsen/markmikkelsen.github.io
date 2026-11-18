@@ -1,46 +1,21 @@
-Creative Commons Attribution 4.0 International (CC BY 4.0)
+MIT License
 
 Copyright (c) 2026 Mark Mikkelsen
 
-Unless otherwise noted, the original non-software content of this academic
-website—including text, original illustrations, graphics, and other authored
-media—is licensed under the Creative Commons Attribution 4.0 International
-License.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-You are free to share and adapt that material, including for commercial
-purposes, provided that you give appropriate credit, provide a link to the
-license, and indicate whether changes were made. You may not apply legal terms
-or technological measures that legally restrict others from doing anything the
-license permits.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Canonical license URL:
-https://creativecommons.org/licenses/by/4.0/
-
-Full legal code:
-https://creativecommons.org/licenses/by/4.0/legalcode
-
-Suggested attribution:
-"Academic website content by Mark Mikkelsen, licensed under CC BY 4.0
-(https://creativecommons.org/licenses/by/4.0/). Changes were made."
-
-Scope and exclusions
---------------------
-
-This license applies only to material for which Mark Mikkelsen owns the rights
-and has authority to license. It does not apply to third-party photographs,
-figures, logos, trademarks, publication excerpts, linked resources, or other
-materials identified as belonging to someone else. Those materials remain
-subject to their respective rights, licenses, and permissions.
-
-Software and source code are not licensed under CC BY 4.0 unless a file or
-notice expressly says otherwise. In the absence of a separate software license,
-all rights in the website's HTML, CSS, JavaScript, configuration, and other code
-are reserved.
-
-No endorsement by Mark Mikkelsen is implied by reuse. The license does not
-grant trademark, patent, privacy, publicity, or other rights beyond the rights
-expressly covered by CC BY 4.0.
-
-This notice is a plain-language application of CC BY 4.0, not a substitute for
-the license's legal code. If this notice conflicts with the legal code, the
-legal code controls.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
