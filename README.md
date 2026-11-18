@@ -23,9 +23,9 @@ npm run build
 
 The command creates a checked, deployable copy in `dist/`. No package installation is required.
 
-## Shared header and footer
+## Shared head, header, and footer
 
-Edit `partials/header.html` to update the name, navigation, or header controls, and `partials/footer.html` to update the footer, once for all eight pages. Each source HTML page contains `<!-- include:header -->` and `<!-- include:footer -->` markers; the build replaces them with the shared partials. Footer links with a `data-nav` value matching the page's `<body data-page>` are omitted on that page, so a page never links to itself in the footer. Run `npm run build` after editing, then preview or publish `dist/`. Preview the built pages rather than the source HTML files, which contain the placeholders. The partials are embedded during the build and appear immediately without a separate browser request.
+Edit `partials/head.html` to update the `<head>` tags shared by every page (character set, viewport, theme color, favicon, theme script, stylesheet, and script), `partials/header.html` to update the name, navigation, or header controls, and `partials/footer.html` to update the footer, once for all eight pages. Each source HTML page contains `<!-- include:head -->`, `<!-- include:header -->`, and `<!-- include:footer -->` markers; the build replaces them with the shared partials. Each page's `<head>` keeps only what is specific to it: its title, description, and Open Graph title, description, and type. The build also adds `partials/head-social.html` (canonical URL, Open Graph URL, and Open Graph image) to every page not marked `noindex`, filling in `{{url}}` from the page's file name. Footer links with a `data-nav` value matching the page's `<body data-page>` are omitted on that page, so a page never links to itself in the footer. Run `npm run build` after editing, then preview or publish `dist/`. Preview the built pages rather than the source HTML files, which contain the placeholders. The partials are embedded during the build and appear immediately without a separate browser request.
 
 ## Features
 

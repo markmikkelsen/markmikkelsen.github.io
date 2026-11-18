@@ -22,13 +22,19 @@ const pages = [
   "404.html",
 ];
 const rootFiles = ["LICENSE", "LICENSE-CC.txt", "robots.txt", "sitemap.xml"];
+const siteUrl = "https://markmikkelsen.github.io/";
 const readPartial = async (name) =>
   (await readFile(path.join(root, "partials", `${name}.html`), "utf8")).trim();
+// Partials are expanded in this order, so a partial may include ones listed
+// after it (head includes theme-init).
 const partials = {
+  head: await readPartial("head"),
   "theme-init": await readPartial("theme-init"),
   header: await readPartial("header"),
   footer: await readPartial("footer"),
 };
+// Canonical and Open Graph URL/image tags, added to every indexable page.
+const headSocial = await readPartial("head-social");
 const bibliography = JSON.parse(
   await readFile(path.join(root, "assets/publications.json"), "utf8"),
 );
@@ -92,6 +98,13 @@ for (const page of pages) {
     }
     html = html.replace(marker, () => content);
   }
+  if (!/<meta\b[^>]*\bname="robots"[^>]*\bnoindex\b/.test(html)) {
+    const url = siteUrl + (page === "index.html" ? "" : page);
+    html = html.replace(
+      /\n(\s*)<\/head>/,
+      (_, indent) => `\n${headSocial.replaceAll("{{url}}", url)}\n${indent}</head>`,
+    );
+  }
   // GitHub Pages serves 404.html at whatever URL was requested, including
   // nested paths, so its local links must be root-absolute to resolve.
   if (page === "404.html") {
@@ -141,6 +154,8 @@ for (const [page, { html }] of builtPages) {
     )
   )
     missing.push(`${page}: missing description`);
+  if (page !== "404.html" && !/<link rel="canonical" href="https:/.test(html))
+    missing.push(`${page}: missing canonical URL`);
   for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const target = match[1];
     if (/^(?:https?:|mailto:)/.test(target)) continue;
