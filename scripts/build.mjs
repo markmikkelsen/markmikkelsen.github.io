@@ -50,6 +50,19 @@ const escapeHtml = (value) =>
         char
       ],
   );
+const publicationRoles = ["First author", "Senior author"].filter((role) =>
+  bibliography.some((publication) => publication.role === role),
+);
+const roleFilters =
+  '<div class="filters pub-role-filters" role="group" aria-label="Filter by my author role">' +
+  '<button class="filter" data-role="all" aria-pressed="true">All roles</button>' +
+  publicationRoles
+    .map(
+      (role) =>
+        `<button class="filter" data-role="${escapeHtml(role)}" aria-pressed="false">${escapeHtml(role)}</button>`,
+    )
+    .join("") +
+  "</div>";
 const publicationTypes = [
   ...new Set(bibliography.map((publication) => publication.type)),
 ];
@@ -119,6 +132,10 @@ for (const page of pages) {
     if (html.split(marker).length !== 2)
       throw new Error("Expected one publication type filter marker");
     html = html.replace(marker, () => typeFilters);
+    const roleMarker = "<!-- include:publication-roles -->";
+    if (html.split(roleMarker).length !== 2)
+      throw new Error("Expected one publication role filter marker");
+    html = html.replace(roleMarker, () => roleFilters);
     html = html.replace(
       /<article\b[^>]*class="pub"[^>]*>[\s\S]*?<\/article>/g,
       (article) => {
@@ -126,10 +143,20 @@ for (const page of pages) {
         const publication = publicationsByDoi.get(doi);
         if (!publication?.type)
           throw new Error(`Missing publication type in JSON for ${doi}`);
-        return article.replace(
+        const role = publication.role ? escapeHtml(publication.role) : "";
+        let tagged = article.replace(
           "<article ",
-          () => `<article data-type="${escapeHtml(publication.type)}" `,
+          () =>
+            `<article data-type="${escapeHtml(publication.type)}"` +
+            (role ? ` data-role="${role}" ` : " "),
         );
+        // Label papers on which I am first or senior author.
+        if (role)
+          tagged = tagged.replace(
+            /(<h3>)/,
+            (heading) => `<span class="tag role-tag">${role}</span>\n${heading}`,
+          );
+        return tagged;
       },
     );
   }

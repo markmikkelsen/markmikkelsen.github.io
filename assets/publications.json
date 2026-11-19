@@ -5,7 +5,8 @@
     "authors": "Archibald J, Igwe KC, Kaiser A, Landheer K, Lee J, Kramer JLK, Gudmundson AT, Zöllner HJ, Oeltzschner G, Fleischer CC, Zölch N, Near J, MIKKELSEN M",
     "citation": "Magn Reson Med. 2026;96(2):516-529",
     "doi": "10.1002/mrm.70380",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "Senior author"
   },
   {
     "year": 2026,
@@ -13,7 +14,8 @@
     "authors": "Archibald J, Bouchard AE, Noeske R, Shungu DC, MIKKELSEN M",
     "citation": "Magn Reson Med. 2026;95(3):1375-1392",
     "doi": "10.1002/mrm.70161",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "Senior author"
   },
   {
     "year": 2026,
@@ -53,7 +55,8 @@
     "authors": "Bouchard AE, MIKKELSEN M",
     "citation": "Magn Reson Imaging. 2025;122:110452",
     "doi": "10.1016/j.mri.2025.110452",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "Senior author"
   },
   {
     "year": 2025,
@@ -61,7 +64,8 @@
     "authors": "Bouchard AE, Wong D, Bogner W, Gau R, Halchenko YO, Lamb DG, Markiewicz CJ, Mullins PG, Niso G, Oeltzschner G, BIDS Maintainers (Appelhoff S, Blair R, Earl E, Galassi A, Hardcastle N, Pfarr JK, Ray K, Rogers C, Salo T), Clarke WT, Wilson M, MIKKELSEN M",
     "citation": "Sci Data. 2025;12(1):1384",
     "doi": "10.1038/s41597-025-05543-2",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "Senior author"
   },
   {
     "year": 2025,
@@ -301,7 +305,8 @@
     "authors": "MIKKELSEN M, He J, Tommerdahl M, Edden RAE, Mostofsky SH, Puts NAJ",
     "citation": "Sci Rep. 2020;10:6528",
     "doi": "10.1038/s41598-020-63208-z",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "First author"
   },
   {
     "year": 2020,
@@ -309,7 +314,8 @@
     "authors": "MIKKELSEN M, Tapper S, Near J, Mostofsky SH, Puts NAJ, Edden RAE",
     "citation": "NMR Biomed. 2020;33(10):e4368",
     "doi": "10.1002/nbm.4368",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "First author"
   },
   {
     "year": 2020,
@@ -373,7 +379,8 @@
     "authors": "MIKKELSEN M, Rimbault DL, Barker PB, Bhattacharyya PK, Brix MK, Buur PF, Cecil KM, Chan KL, Chen DYT, Craven AR, Cuypers K, Dacko M, Duncan NW, Dydak U, Edmondson DA, Ende G, Ersland L, Forbes MA, Gao F, Greenhouse I, Harris AD, He N, Heba S, Hoggard N, Hsu T-W, Jansen JFA, Kangarlu A, Lange T, Lebel RM, Li Y, Lin C-YE, Liou J-K, Lirng J-F, Liu F, Long JR, Ma R, Maes C, Moreno-Ortega M, Murray SO, Noah S, Noeske R, Noseworthy MD, Oeltzschner G, Porges EC, Prisciandaro JJ, Puts NAJ, Roberts TPL, Sack M, Sailasuta N, Saleh MG, Schallmo M-P, Simard N, Stoffers D, Swinnen SP, Tegenthoff M, Truong P, Wang G, Wilkinson ID, Wittsack H-J, Woods AJ, Xu H, Yan F, Zhang C, Zipunnikov V, Zöllner HJ, Edden RAE",
     "citation": "Neuroimage. 2019;191:537-548",
     "doi": "10.1016/j.neuroimage.2019.02.059",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "First author"
   },
   {
     "year": 2019,
@@ -413,7 +420,8 @@
     "authors": "MIKKELSEN M, Saleh MG, Near J, Chan KL, Gong T, Harris AD, Oeltzschner G, Puts NAJ, Cecil KM, Wilkinson ID, Edden RAE",
     "citation": "Magn Reson Med. 2018;80(1):21-28",
     "doi": "10.1002/mrm.27027",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "First author"
   },
   {
     "year": 2018,
@@ -421,7 +429,8 @@
     "authors": "MIKKELSEN M, Loo RS, Puts NAJ, Edden RAE, Harris AD",
     "citation": "J Neurosci Methods. 2018;303:86-94",
     "doi": "10.1016/j.jneumeth.2018.02.012",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "First author"
   },
   {
     "year": 2018,
@@ -429,7 +438,8 @@
     "authors": "MIKKELSEN M, Harris AD, Edden RAE, Puts NAJ",
     "citation": "Brain Res. 2018;1701:204-211",
     "doi": "10.1016/j.brainres.2018.09.021",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "First author"
   },
   {
     "year": 2018,
@@ -461,7 +471,8 @@
     "authors": "MIKKELSEN M, Wodka EL, Mostofsky SH, Puts NAJ",
     "citation": "Dev Cogn Neurosci. 2018;29:140-150",
     "doi": "10.1016/j.dcn.2016.12.005",
-    "type": "Review article"
+    "type": "Review article",
+    "role": "First author"
   },
   {
     "year": 2017,
@@ -469,7 +480,8 @@
     "authors": "MIKKELSEN M, Barker PB, Bhattacharyya PK, Brix MK, Buur PF, Cecil KM, Chan KL, Chen DY-T, Craven AR, Cuypers K, Dacko M, Duncan NW, Dydak U, Edmondson DA, Ende G, Ersland L, Gao F, Greenhouse I, Harris AD, He N, Heba S, Hoggard N, Hsu T, Jansen JFA, Kangarlu A, Lange T, Lebel RM, Li Y, Lin CE, Liou J, Lirng J-F, Liu F, Ma R, Maes C, Moreno-Ortega M, Murray SO, Noah S, Noeske R, Noseworthy MD, Oeltzschner G, Prisciandaro JJ, Puts NAJ, Roberts TPL, Sack M, Sailasuta N, Saleh MG, Schallmo M, Simard N, Swinnen SP, Tegenthoff M, Truong P, Wang G, Wilkinson ID, Wittsack H-J, Xu H, Yan F, Zhang C, Zipunnikov V, Zöllner HJ, Edden RAE",
     "citation": "Neuroimage. 2017;159:32-45",
     "doi": "10.1016/j.neuroimage.2017.07.021",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "First author"
   },
   {
     "year": 2017,
@@ -493,7 +505,8 @@
     "authors": "MIKKELSEN M, Singh KD, Sumner P, Evans CJ",
     "citation": "Magn Reson Med. 2016;75(3):946-953",
     "doi": "10.1002/mrm.25699",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "First author"
   },
   {
     "year": 2016,
@@ -501,7 +514,8 @@
     "authors": "MIKKELSEN M, Singh KD, Brealy JA, Linden DEJ, Evans CJ",
     "citation": "NMR Biomed. 2016;29(11):1644-1655",
     "doi": "10.1002/nbm.3622",
-    "type": "Original research"
+    "type": "Original research",
+    "role": "First author"
   },
   {
     "year": 2016,

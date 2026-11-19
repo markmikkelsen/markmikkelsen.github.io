@@ -114,9 +114,11 @@
   const publications = [...document.querySelectorAll(".pub[data-year]")];
   const filters = [...document.querySelectorAll(".filter[data-year]")];
   const typeFilters = [...document.querySelectorAll(".filter[data-type]")];
+  const roleFilters = [...document.querySelectorAll(".filter[data-role]")];
   const empty = document.getElementById("pub-empty");
   let selectedYear = "all";
   let selectedType = "all";
+  let selectedRole = "all";
 
   function filterPublications() {
     if (!search) return;
@@ -126,6 +128,7 @@
       const matches =
         (selectedYear === "all" || publication.dataset.year === selectedYear) &&
         (selectedType === "all" || publication.dataset.type === selectedType) &&
+        (selectedRole === "all" || publication.dataset.role === selectedRole) &&
         publication.textContent.toLowerCase().includes(query);
       publication.hidden = !matches;
       if (matches) visible += 1;
@@ -142,6 +145,16 @@
     button.addEventListener("click", () => {
       selectedType = button.dataset.type;
       typeFilters.forEach((item) =>
+        item.setAttribute("aria-pressed", String(item === button)),
+      );
+      filterPublications();
+    }),
+  );
+
+  roleFilters.forEach((button) =>
+    button.addEventListener("click", () => {
+      selectedRole = button.dataset.role;
+      roleFilters.forEach((item) =>
         item.setAttribute("aria-pressed", String(item === button)),
       );
       filterPublications();

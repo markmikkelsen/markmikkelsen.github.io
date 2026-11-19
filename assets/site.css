@@ -1027,5 +1027,13 @@ footer {
 }
 
 .pub-type-filters {
-  margin: -12px 0 28px;
+  margin: -12px 0 12px;
+}
+.pub-role-filters {
+  margin: 0 0 28px;
+}
+.pub .role-tag {
+  margin-right: 6px;
+  border: 1px solid var(--stroke);
+  background: transparent;
 }
