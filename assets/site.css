@@ -280,6 +280,31 @@ h3 {
   font-size: 1.13rem;
   line-height: 1.8;
 }
+.page-hero .status-note {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  max-width: 720px;
+  margin: 26px 0 0;
+  padding: 14px 18px;
+  border: 1px solid var(--stroke);
+  border-radius: 12px;
+  background: var(--surface);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+.status-note strong {
+  color: var(--ink);
+}
+.status-dot {
+  flex: none;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #3fb27f;
+  box-shadow: 0 0 0 4px rgba(63, 178, 127, 0.18);
+  transform: translateY(-1px);
+}
 .page-hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
