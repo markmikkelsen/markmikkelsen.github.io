@@ -280,6 +280,24 @@ h3 {
   font-size: 1.13rem;
   line-height: 1.8;
 }
+.page-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 56px;
+  align-items: center;
+}
+.portrait {
+  display: block;
+  width: 280px;
+}
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
 .breadcrumb {
   margin-bottom: 24px;
   color: var(--muted);
@@ -833,6 +851,13 @@ footer {
   }
   .page-hero {
     padding: 64px 0 54px;
+  }
+  .page-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .portrait {
+    width: 180px;
   }
   .section {
     padding: 64px 0;
