@@ -37,6 +37,8 @@ Edit `partials/head.html` to update the `<head>` tags shared by every page (char
 - Direct DOI and authoritative source links
 - Page-specific titles, descriptions, and Open Graph summaries
 - Favicon, custom 404 page, `robots.txt`, and GitHub Pages compatibility
+- `sitemap.xml` generated at build time, with each page's last-modified date taken from its git history
+- Structured data (`schema.org` `Person`) on the homepage for search engines
 - No analytics, advertising, cookies, external fonts, or runtime dependencies
 
 ## License

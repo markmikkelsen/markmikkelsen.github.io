@@ -7,6 +7,7 @@ import {
   rm,
   writeFile,
 } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
@@ -22,7 +23,9 @@ const pages = [
   "contact.html",
   "404.html",
 ];
-const rootFiles = ["LICENSE", "LICENSE-CC.txt", "robots.txt", "sitemap.xml"];
+const rootFiles = ["LICENSE", "LICENSE-CC.txt", "robots.txt"];
+// Extra source files whose changes count as changes to a page, for sitemap dates.
+const pageSources = { "publications.html": ["assets/publications.json"] };
 const siteUrl = "https://markmikkelsen.github.io/";
 const readPartial = async (name) =>
   (await readFile(path.join(root, "partials", `${name}.html`), "utf8")).trim();
@@ -116,7 +119,8 @@ for (const page of pages) {
     const url = siteUrl + (page === "index.html" ? "" : page);
     html = html.replace(
       /\n(\s*)<\/head>/,
-      (_, indent) => `\n${headSocial.replaceAll("{{url}}", url)}\n${indent}</head>`,
+      (_, indent) =>
+        `\n${headSocial.replaceAll("{{url}}", url)}\n${indent}</head>`,
     );
   }
   // GitHub Pages serves 404.html at whatever URL was requested, including
@@ -154,7 +158,8 @@ for (const page of pages) {
         if (role)
           tagged = tagged.replace(
             /(<h[34]>)/,
-            (heading) => `<span class="tag role-tag">${role}</span>\n${heading}`,
+            (heading) =>
+              `<span class="tag role-tag">${role}</span>\n${heading}`,
           );
         return tagged;
       },
@@ -163,11 +168,46 @@ for (const page of pages) {
   await writeFile(path.join(output, page), html);
 }
 
+// The date (YYYY-MM-DD) of the latest commit touching a page's source files, or
+// null outside a git checkout. The deploy workflow fetches the full history.
+const lastModified = (page) => {
+  try {
+    const date = execFileSync(
+      "git",
+      ["log", "-1", "--format=%cs", "--", page, ...(pageSources[page] ?? [])],
+      { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] },
+    ).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : null;
+  } catch {
+    return null;
+  }
+};
+const indexedPages = [];
+for (const page of pages) {
+  const html = await readFile(path.join(output, page), "utf8");
+  if (/<meta\b[^>]*\bname="robots"[^>]*\bnoindex\b/.test(html)) continue;
+  indexedPages.push(page);
+}
+const sitemapEntries = indexedPages.map((page) => {
+  const url = siteUrl + (page === "index.html" ? "" : page);
+  const date = lastModified(page);
+  return `  <url><loc>${url}</loc>${date ? `<lastmod>${date}</lastmod>` : ""}</url>`;
+});
+await writeFile(
+  path.join(output, "sitemap.xml"),
+  '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    sitemapEntries.join("\n") +
+    "\n</urlset>\n",
+);
+
 const missing = [];
 const builtPages = new Map();
 for (const page of pages) {
   const html = await readFile(path.join(output, page), "utf8");
-  const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(([, id]) => id));
+  const ids = new Set(
+    [...html.matchAll(/\bid="([^"]+)"/g)].map(([, id]) => id),
+  );
   builtPages.set(page, { html, ids });
 }
 for (const [page, { html }] of builtPages) {
