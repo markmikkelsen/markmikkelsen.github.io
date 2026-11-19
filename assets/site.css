@@ -562,7 +562,8 @@ h3 {
   font-weight: 850;
 }
 .pub h2,
-.pub h3 {
+.pub h3,
+.pub h4 {
   margin: 0 0 7px;
   font-family: Georgia, serif;
   font-size: 1.08rem;
@@ -1015,8 +1016,9 @@ footer {
   display: grid;
   gap: 36px;
 }
-.pub-year > h2 {
+.pub-year > h3 {
   margin: 0 0 16px;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
   scroll-margin-top: 100px;
 }
 .pub .tag {

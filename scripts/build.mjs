@@ -153,7 +153,7 @@ for (const page of pages) {
         // Label papers on which I am first or senior author.
         if (role)
           tagged = tagged.replace(
-            /(<h3>)/,
+            /(<h[34]>)/,
             (heading) => `<span class="tag role-tag">${role}</span>\n${heading}`,
           );
         return tagged;
