@@ -660,6 +660,14 @@ h3 {
   gap: 14px;
   line-height: 1.55;
 }
+.honor-list.stacked li {
+  grid-template-columns: 1fr;
+  gap: 2px;
+}
+.honor-list + .text-link {
+  display: inline-block;
+  margin-top: 18px;
+}
 .honor-list .honor-year {
   padding-top: 2px;
   color: var(--accent);
