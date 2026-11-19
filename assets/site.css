@@ -639,6 +639,14 @@ h3 {
   color: var(--muted);
   font-size: 0.9rem;
 }
+.person-papers {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--stroke);
+  list-style: none;
+}
 .honor-list {
   display: grid;
   gap: 12px;
@@ -840,23 +848,13 @@ footer {
   }
 }
 
-@media (max-width: 760px) {
-  .wrap {
-    width: min(100% - 34px, 1160px);
-  }
+/* Collapse the navigation into the menu before its links run out of room. */
+@media (max-width: 860px) {
   .header-inner {
     min-height: 68px;
   }
   #menu-btn {
     display: grid;
-  }
-  .icon-btn {
-    width: 44px;
-    height: 44px;
-  }
-  .filter {
-    min-width: 44px;
-    min-height: 44px;
   }
   .nav {
     display: none;
@@ -888,6 +886,20 @@ footer {
   .nav a {
     width: 100%;
     font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .wrap {
+    width: min(100% - 34px, 1160px);
+  }
+  .icon-btn {
+    width: 44px;
+    height: 44px;
+  }
+  .filter {
+    min-width: 44px;
+    min-height: 44px;
   }
   .hero-grid {
     min-height: auto;

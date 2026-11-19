@@ -17,6 +17,7 @@ const pages = [
   "publications.html",
   "software.html",
   "talks.html",
+  "people.html",
   "about.html",
   "contact.html",
   "404.html",
