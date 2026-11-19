@@ -635,6 +635,29 @@ h3 {
 .talk p {
   margin-bottom: 8px;
 }
+.card-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.honor-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.honor-list li {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 14px;
+  line-height: 1.55;
+}
+.honor-list .honor-year {
+  padding-top: 2px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 850;
+}
 
 .about-grid {
   display: grid;
@@ -880,6 +903,10 @@ footer {
   .page-hero-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+  .honor-list li {
+    grid-template-columns: 1fr;
+    gap: 2px;
   }
   .portrait {
     width: 180px;
