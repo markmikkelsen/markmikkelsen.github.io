@@ -27,6 +27,8 @@ const rootFiles = ["LICENSE", "LICENSE-CC.txt", "robots.txt"];
 // Extra source files whose changes count as changes to a page, for sitemap dates.
 const pageSources = { "publications.html": ["assets/publications.json"] };
 const siteUrl = "https://markmikkelsen.github.io/";
+// Time zone used to show the footer's "Last updated" date.
+const siteTimeZone = "America/New_York";
 const readPartial = async (name) =>
   (await readFile(path.join(root, "partials", `${name}.html`), "utf8")).trim();
 // Partials are expanded in this order, so a partial may include ones listed
@@ -37,6 +39,34 @@ const partials = {
   header: await readPartial("header"),
   footer: await readPartial("footer"),
 };
+// The footer shows when the site last changed: the latest commit, or the build
+// time outside a git checkout.
+const lastUpdated = (() => {
+  try {
+    const seconds = execFileSync("git", ["log", "-1", "--format=%ct"], {
+      cwd: root,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    if (/^\d+$/.test(seconds)) return new Date(Number(seconds) * 1000);
+  } catch {}
+  return new Date();
+})();
+const lastUpdatedIso = new Intl.DateTimeFormat("en-CA", {
+  timeZone: siteTimeZone,
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(lastUpdated);
+const lastUpdatedText = new Intl.DateTimeFormat("en-US", {
+  timeZone: siteTimeZone,
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+}).format(lastUpdated);
+partials.footer = partials.footer
+  .replaceAll("{{lastUpdatedIso}}", lastUpdatedIso)
+  .replaceAll("{{lastUpdated}}", lastUpdatedText);
 // Canonical and Open Graph URL/image tags, added to every indexable page.
 const headSocial = await readPartial("head-social");
 const bibliography = JSON.parse(

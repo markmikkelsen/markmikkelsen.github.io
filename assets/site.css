@@ -804,6 +804,12 @@ footer {
   color: var(--muted);
   font-size: 0.79rem;
 }
+.footer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 18px;
+}
 .footer-links {
   display: flex;
   flex-wrap: wrap;
