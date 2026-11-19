@@ -700,6 +700,20 @@ h3 {
 .fact strong {
   display: block;
 }
+.degree-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.degree-list span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
 .fact small {
   margin-bottom: 5px;
   color: var(--accent);
