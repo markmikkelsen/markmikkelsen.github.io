@@ -260,6 +260,9 @@ h3 {
   );
   box-shadow: 0 24px 70px rgba(13, 50, 72, 0.23);
 }
+.hero-art picture {
+  display: contents;
+}
 .hero-art img {
   width: 100%;
 }

@@ -123,12 +123,16 @@
             </div>
           </div>
           <div class="hero-art">
-            <img
-              src="assets/brain-spectrum.jpg"
-              width="1024"
-              height="1024"
-              alt="Illustration of a sagittal view of the human brain"
-            />
+            <picture>
+              <source srcset="assets/brain-spectrum.webp" type="image/webp" />
+              <img
+                src="assets/brain-spectrum.jpg"
+                width="1024"
+                height="1024"
+                alt="Illustration of a sagittal view of the human brain"
+                fetchpriority="high"
+              />
+            </picture>
             <div class="art-label">Brain chemistry · signal · discovery</div>
           </div>
         </div>
