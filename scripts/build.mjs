@@ -67,8 +67,29 @@ const lastUpdatedText = new Intl.DateTimeFormat("en-US", {
 partials.footer = partials.footer
   .replaceAll("{{lastUpdatedIso}}", lastUpdatedIso)
   .replaceAll("{{lastUpdated}}", lastUpdatedText);
-// Canonical and Open Graph URL/image tags, added to every indexable page.
+// Canonical, Open Graph, and Twitter card tags, added to every indexable page.
 const headSocial = await readPartial("head-social");
+// Social preview image for each page; pages not listed use the default.
+const defaultSocialImage = {
+  src: "assets/brain-spectrum.jpg",
+  width: 1024,
+  height: 1024,
+  alt: "Illustration of a sagittal view of the human brain",
+};
+const socialImages = {
+  "about.html": {
+    src: "assets/mark-mikkelsen.jpg",
+    width: 640,
+    height: 640,
+    alt: "Portrait of Mark Mikkelsen",
+  },
+  "software.html": {
+    src: "assets/gannet-logo-2026.png",
+    width: 1200,
+    height: 362,
+    alt: "Gannet logo: open-source software for in vivo MRS",
+  },
+};
 const bibliography = JSON.parse(
   await readFile(path.join(root, "assets/publications.json"), "utf8"),
 );
@@ -147,10 +168,16 @@ for (const page of pages) {
   }
   if (!/<meta\b[^>]*\bname="robots"[^>]*\bnoindex\b/.test(html)) {
     const url = siteUrl + (page === "index.html" ? "" : page);
+    const image = socialImages[page] ?? defaultSocialImage;
+    const social = headSocial
+      .replaceAll("{{url}}", url)
+      .replaceAll("{{image}}", siteUrl + image.src)
+      .replaceAll("{{imageWidth}}", String(image.width))
+      .replaceAll("{{imageHeight}}", String(image.height))
+      .replaceAll("{{imageAlt}}", escapeHtml(image.alt));
     html = html.replace(
       /\n(\s*)<\/head>/,
-      (_, indent) =>
-        `\n${headSocial.replaceAll("{{url}}", url)}\n${indent}</head>`,
+      (_, indent) => `\n${social}\n${indent}</head>`,
     );
   }
   // GitHub Pages serves 404.html at whatever URL was requested, including
@@ -254,6 +281,16 @@ for (const [page, { html }] of builtPages) {
     missing.push(`${page}: missing description`);
   if (page !== "404.html" && !/<link rel="canonical" href="https:/.test(html))
     missing.push(`${page}: missing canonical URL`);
+  const ogImage = html.match(
+    /<meta property="og:image" content="([^"]+)"/,
+  )?.[1];
+  if (ogImage?.startsWith(siteUrl)) {
+    try {
+      await access(path.join(output, ogImage.slice(siteUrl.length)));
+    } catch {
+      missing.push(`${page}: missing social image ${ogImage}`);
+    }
+  }
   for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const target = match[1];
     if (/^(?:https?:|mailto:)/.test(target)) continue;
