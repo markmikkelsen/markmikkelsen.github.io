@@ -18,33 +18,62 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Mark Mikkelsen",
-        "honorificSuffix": "Ph.D.",
-        "jobTitle": "Neuroimaging Scientist",
-        "description": "Neuroimaging scientist specializing in magnetic resonance spectroscopy",
-        "url": "https://markmikkelsen.github.io/",
-        "image": "https://markmikkelsen.github.io/assets/mark-mikkelsen.jpg",
-        "email": "mailto:mark.mikkelsen@gmail.com",
-        "alumniOf": [
-          { "@type": "CollegeOrUniversity", "name": "Cardiff University" },
-          { "@type": "CollegeOrUniversity", "name": "Bangor University" },
-          { "@type": "CollegeOrUniversity", "name": "University of Glasgow" }
-        ],
-        "knowsAbout": [
-          "Magnetic resonance spectroscopy",
-          "Edited MRS",
-          "GABA",
-          "Glutathione",
-          "Neuroimaging",
-          "Reproducibility",
-          "Open science"
-        ],
-        "sameAs": [
-          "https://orcid.org/0000-0002-0349-3782",
-          "https://scholar.google.com/citations?user=PnbVGBwAAAAJ",
-          "https://github.com/markmikkelsen",
-          "https://www.linkedin.com/in/mark-mikkelsen-6117b283"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://markmikkelsen.github.io/#website",
+            "url": "https://markmikkelsen.github.io/",
+            "name": "Mark Mikkelsen, Ph.D.",
+            "description": "Personal website of Mark Mikkelsen, Ph.D., neuroimaging scientist specializing in magnetic resonance spectroscopy",
+            "inLanguage": "en-US",
+            "publisher": { "@id": "https://markmikkelsen.github.io/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://markmikkelsen.github.io/#person",
+            "name": "Mark Mikkelsen",
+            "givenName": "Mark",
+            "familyName": "Mikkelsen",
+            "honorificSuffix": "Ph.D.",
+            "jobTitle": "Neuroimaging Scientist",
+            "hasOccupation": {
+              "@type": "Occupation",
+              "name": "Neuroimaging scientist",
+              "description": "Develops and applies magnetic resonance spectroscopy methods to measure human brain chemistry"
+            },
+            "description": "Neuroimaging scientist specializing in magnetic resonance spectroscopy",
+            "url": "https://markmikkelsen.github.io/",
+            "image": "https://markmikkelsen.github.io/assets/mark-mikkelsen.jpg",
+            "email": "mailto:mark.mikkelsen@gmail.com",
+            "knowsLanguage": {
+              "@type": "Language",
+              "name": "English",
+              "alternateName": "en"
+            },
+            "alumniOf": [
+              { "@type": "CollegeOrUniversity", "name": "Cardiff University" },
+              { "@type": "CollegeOrUniversity", "name": "Bangor University" },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Glasgow"
+              }
+            ],
+            "knowsAbout": [
+              "Magnetic resonance spectroscopy",
+              "Edited MRS",
+              "GABA",
+              "Glutathione",
+              "Neuroimaging",
+              "Reproducibility",
+              "Open science"
+            ],
+            "sameAs": [
+              "https://orcid.org/0000-0002-0349-3782",
+              "https://scholar.google.com/citations?user=PnbVGBwAAAAJ",
+              "https://github.com/markmikkelsen",
+              "https://www.linkedin.com/in/mark-mikkelsen-6117b283"
+            ]
+          }
         ]
       }
     </script>
